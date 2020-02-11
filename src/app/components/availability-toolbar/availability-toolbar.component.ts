@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AvailabilityGridRequest } from '../availability-grid.model';
-import * as AvailabilityGridActions from '../availability-grid.actions';
+import { AvailabilityGridRequest } from '../availability-grid/availability-grid.model';
+import * as AvailabilityGridActions from '../availability-grid/availability-grid.actions';
 import { Store } from '@ngrx/store';
-import { AvailabilityGridState } from '../availability-grid.state';
+import { AvailabilityGridState } from '../availability-grid/availability-grid.state';
 import { IfStmt } from '@angular/compiler';
 
 @Component({

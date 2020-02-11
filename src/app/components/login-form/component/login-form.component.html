@@ -1,0 +1,38 @@
+<div class="row h-100 py-5">
+    <div class="col px-3 text-center pt-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="logoFont">Lateros</h1>
+            </div>    
+        </div>
+        <div class="row pt-5">
+            <div class="col">
+                <p class="subtext">Welcome to Lateros</p>
+            </div>    
+        </div>
+        <div class="row pt-4">
+            <div class="col">
+                <div class="row py-1">
+                    <div class="col">
+                        <input type="text" [(ngModel)]="user.username" placeholder="Username" />       
+                    </div>   
+                </div>
+                <div class="row py-1">
+                    <div class="col">
+                        <input type="password" [(ngModel)]="user.password" placeholder="Password" />       
+                    </div>   
+                </div>
+                <div class="row pb-1">
+                    <div class="col">
+                        <a href="#"><small>Forgot Password?</small></a>       
+                    </div>   
+                </div>
+                <div class="row pb-1 pt-4">
+                    <div class="col">
+                        <app-round-button [label]="'Sign In'" (click)="tryLogin()"></app-round-button>       
+                    </div>   
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>

@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-import * as AvailabilityGridActions from '../../availability-grid.actions';
-import { Availability, AvailabilityGridRequest, RoomAvailability } from '../../availability-grid.model';
-import { AvailabilityGridState } from '../../availability-grid.state';
+import * as AvailabilityGridActions from '../availability-grid.actions';
+import { Availability, AvailabilityGridRequest, RoomAvailability } from '../availability-grid.model';
+import { AvailabilityGridState } from '../availability-grid.state';
 
 @Component({
   selector: 'app-availability-grid',

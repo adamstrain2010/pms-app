@@ -1,1 +1,6 @@
-$primary: green;
+$color1: rgba(232, 247, 238, 1);
+$color2: rgba(212, 203, 146, 1);
+$primary: rgba(57, 92, 107, 1);
+$secondary: lighten($primary, 30%);
+$color4: rgba(128, 164, 237, 1);
+$color5: rgba(188, 211, 242, 1);

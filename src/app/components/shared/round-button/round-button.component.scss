@@ -1,0 +1,12 @@
+@import './../../../../variables.scss';
+
+.round-button{
+    background-color: $primary;
+    color: white;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 360px;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
