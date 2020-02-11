@@ -1,0 +1,35 @@
+<app-toolbar>
+    <app-availability-toolbar></app-availability-toolbar>
+</app-toolbar>
+<div class="row">
+    <div class="col">
+      <div class="w-100" >
+        <table class="table table-bordered table-sm table-striped table-hover">
+            <tr>
+                <td></td>
+                <td *ngFor="let availabilityCol of availabilityGridList[0].availability; let i = index">
+                    {{availabilityCol.availabilityDate | date: 'dd/MM/yyyy'}}
+                </td>
+            </tr>
+            <tr *ngFor="let availabilityRow of availabilityGridList">
+                <td>{{availabilityRow.roomTypeName}}</td>
+                <td *ngFor="let availability of availabilityRow.availability">
+                    {{availability.numberAvailable}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+<div *ngIf="availabilityGridError?.message">
+    <div class="alert alert-danger" role="alert">
+    Some error occurred. Please try again
+    </div>
+</div>
+<div>
+    <button (click)="testAvailability()">Test</button>
+</div>
+
+<div>
+    <button (click)="reloadAvailability()">Reload</button>
+</div>
